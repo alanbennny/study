@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[9744,["583","static/chunks/711f8d0a-e7faee749acec5b3.js","58","static/chunks/d8adc87b-4b9c01a23b5850b1.js","301","static/chunks/0e142730-1c1a77066c25a631.js","804","static/chunks/804-61e362e676273408.js","78","static/chunks/78-e81b09c53f466d3b.js","85","static/chunks/app/calendar/page-9725be47511577f0.js"],"default"]
+3:I[484,[],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"view":"calendar"}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"XyQdky0axvEGhxctBZElX"}
+5:null

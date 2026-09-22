@@ -1,0 +1,35 @@
+STUDYFLOW: UPLOAD THIS WEBSITE
+
+This is the latest app from StudyFlow-sourcefixed.zip, built for:
+https://alanbennny.github.io/studyflow/
+
+1. Extract this ZIP on your laptop.
+2. Open the extracted folder. You should see index.html, .nojekyll, _next, planner, calendar, focus, analytics and settings.
+3. Open https://github.com/alanbennny/studyflow/upload/main
+4. Select ALL the files AND folders inside the extracted folder and drag them into GitHub. Include _next and .nojekyll. Do not upload the ZIP or the outer folder itself.
+5. Click Commit changes.
+6. Keep Settings > Pages set to Deploy from a branch, main, / (root).
+7. Wait for the deployment to finish, then open your website. Use Ctrl+F5 if the old README still appears.
+
+index.html must appear at the top level of the repository alongside README.md. There is no need to delete README.md to make the website appear. The old source ZIP is not used by this website.
+
+FIREBASE LOGIN AND SYNC
+Your supplied Firebase web configuration is already included in the built JavaScript. The .env.local file is not needed in GitHub. No server credentials were identified in the supplied environment variable names; Firebase web configuration is public client configuration, not permission to access the database.
+
+In Firebase Console, select alan-7e477:
+- Authentication > Settings > Authorized domains: add alanbennny.github.io if it is missing. Enter the hostname only, without https:// or /studyflow/.
+- Authentication > Sign-in method: enable Email/Password. Enable Google if you want Google sign-in.
+- Confirm Cloud Firestore is created and your private per-user rules are published. The original source ZIP contains firestore.rules. Uploading that file to GitHub does not publish Firebase rules.
+
+The supplied rule restricts access to users/{userId}/... to the matching signed-in user. If this project already serves other apps, review existing rules before replacing them.
+
+CHECKS COMPLETED
+Production build and TypeScript passed. All six pages and their local navigation/asset URLs returned HTTP 200 under /studyflow/. Required Firebase settings were present in the compiled app. Firebase account access, live sign-in and cross-device syncing have not been tested. GitHub has not been modified from this chat.
+
+HOSTING CHANGES
+Converted the original build to Next.js static export with /studyflow as the base path and folder-based URLs. Fixed the focus navigation button and metadata image/icon paths. Added .nojekyll. Firebase authentication and syncing code were preserved.
+
+Official references:
+https://firebase.google.com/docs/auth/web/google-signin
+https://firebase.google.com/docs/projects/api-keys
+https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
